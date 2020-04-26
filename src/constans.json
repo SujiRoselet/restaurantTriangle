@@ -1,0 +1,10 @@
+{
+    "API_KEY" : {
+        "HERE_MAP" : "f5vlzAQhxNHz_5HU3vM_ogyw26sOHvFmSwQ3M_gAqvI",
+        "ZOMATO" : "b369e1d2cc19f99e50a2afabee689085"
+    },
+    "BASE_URL" : "https://developers.zomato.com/api/v2.1/",
+    "END_POINTS" : {
+        "GET_RESTATRUANT_DETAILS" : "geocode"
+    }
+}
