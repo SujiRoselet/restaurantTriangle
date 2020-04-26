@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/restaurantTriangle/static/css/main.3dd000f5.chunk.css",
+    "main.js": "/restaurantTriangle/static/js/main.734d3ccd.chunk.js",
+    "main.js.map": "/restaurantTriangle/static/js/main.734d3ccd.chunk.js.map",
+    "runtime-main.js": "/restaurantTriangle/static/js/runtime-main.8b61f64e.js",
+    "runtime-main.js.map": "/restaurantTriangle/static/js/runtime-main.8b61f64e.js.map",
+    "static/js/2.58769c0f.chunk.js": "/restaurantTriangle/static/js/2.58769c0f.chunk.js",
+    "static/js/2.58769c0f.chunk.js.map": "/restaurantTriangle/static/js/2.58769c0f.chunk.js.map",
+    "index.html": "/restaurantTriangle/index.html",
+    "precache-manifest.6d282d7357ee467add27e86215363481.js": "/restaurantTriangle/precache-manifest.6d282d7357ee467add27e86215363481.js",
+    "service-worker.js": "/restaurantTriangle/service-worker.js",
+    "static/css/main.3dd000f5.chunk.css.map": "/restaurantTriangle/static/css/main.3dd000f5.chunk.css.map",
+    "static/js/2.58769c0f.chunk.js.LICENSE.txt": "/restaurantTriangle/static/js/2.58769c0f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b61f64e.js",
+    "static/js/2.58769c0f.chunk.js",
+    "static/css/main.3dd000f5.chunk.css",
+    "static/js/main.734d3ccd.chunk.js"
+  ]
+}
