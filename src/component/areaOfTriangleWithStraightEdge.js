@@ -11,8 +11,9 @@ export default class areaOfTriangleStraightLines extends React.Component {
 
     this.state = {
       areaOfTriangleOfStaright: null,
-      timeTakenToCross: null
-    }
+      timeTakenToCross: null,
+      viewFlag: false,
+    };
   }
 
   componentDidMount() {
@@ -41,6 +42,7 @@ export default class areaOfTriangleStraightLines extends React.Component {
       this.homeToNearestPoint +
       this.nearestToFarthestPoint +
       this.farthestToNearestPoint;
+
     let surface = distance / 2;
     let data =
       surface *
@@ -48,28 +50,29 @@ export default class areaOfTriangleStraightLines extends React.Component {
         (surface - this.nearestToFarthestPoint) *
         (surface - this.farthestToNearestPoint));
 
-
     this.setState({
-      areaOfTriangleOfStaright: Math.sqrt(data),
-      timeTakenToCross: distance / (5 * 3.6)
-    })
-
+      areaOfTriangleOfStaright: Math.sqrt(data).toFixed(2),
+      timeTakenToCross: distance / 5,
+      viewFlag: true,
+    });
   };
 
   render() {
     return (
       <div className="grid">
         <button className="button" onClick={this.findArea}>
-          Find Area Of Triangle With Straight Lines
+          Find Area Of Triangle
         </button>
-        <div>
-          <span>Area Of Triangle Whose Edges are Straight : {this.state.areaOfTriangleOfStaright}</span><br />
-          <span>Time Taken To Walk : {this.state.timeTakenToCross}</span><br />
-          <span>
-            Area Of Triangle Whose Edges are Actual Car Driving Distance: {}
-          </span><br />
-          <span>Time Taken To Walk : {}</span><br />
-        </div>
+        {this.state.viewFlag ? (
+          <div>
+            <span>
+              Area Of Triangle : {this.state.areaOfTriangleOfStaright} Km{" "}
+            </span>
+            <br />
+            <span>Time Taken To Walk : {this.state.timeTakenToCross} Hr</span>
+            <br />
+          </div>
+        ) : null}
       </div>
     );
   }
