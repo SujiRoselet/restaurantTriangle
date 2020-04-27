@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "214d68e92f5f7beb8842a8d4084c50b9",
+    "revision": "b1433fa1566214ab31730b9ef6849902",
     "url": "/restaurantTriangle/index.html"
   },
   {
-    "revision": "082b4e6a1fc09586fe77",
+    "revision": "1438aefb935136bc706f",
     "url": "/restaurantTriangle/static/css/main.3dd000f5.chunk.css"
   },
   {
-    "revision": "eaff3f7f475750897c40",
-    "url": "/restaurantTriangle/static/js/2.b670e13d.chunk.js"
+    "revision": "dfef948fb2683914bf97",
+    "url": "/restaurantTriangle/static/js/2.fd44db4a.chunk.js"
   },
   {
     "revision": "90565ba0b43e1b95d2876295dfd7014d",
-    "url": "/restaurantTriangle/static/js/2.b670e13d.chunk.js.LICENSE.txt"
+    "url": "/restaurantTriangle/static/js/2.fd44db4a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "082b4e6a1fc09586fe77",
-    "url": "/restaurantTriangle/static/js/main.f2e57db8.chunk.js"
+    "revision": "1438aefb935136bc706f",
+    "url": "/restaurantTriangle/static/js/main.3939c648.chunk.js"
   },
   {
     "revision": "80a12dc4267db0ba6604",
