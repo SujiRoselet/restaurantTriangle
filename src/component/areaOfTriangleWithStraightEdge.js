@@ -66,7 +66,7 @@ export default class areaOfTriangleStraightLines extends React.Component {
         {this.state.viewFlag ? (
           <div>
             <span>
-              Area Of Triangle : {this.state.areaOfTriangleOfStaright} Km{" "}
+              Area Of Triangle : {this.state.areaOfTriangleOfStaright} Km
             </span>
             <br />
             <span>Time Taken To Walk : {this.state.timeTakenToCross} Hr</span>
