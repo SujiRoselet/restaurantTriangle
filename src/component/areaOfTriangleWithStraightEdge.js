@@ -1,6 +1,6 @@
 import React from "react";
 import areaOfTriangle from "../component/areaOfTriangle.css";
-
+import mTokm from "../../src/services/mTokm";
 export default class areaOfTriangleStraightLines extends React.Component {
   constructor() {
     super();
@@ -34,25 +34,26 @@ export default class areaOfTriangleStraightLines extends React.Component {
       .distance(objects[0].getGeometry());
 
     // Meter To Km
-    this.homeToNearestPoint = Math.ceil(this.homeToNearestPoint / 1000);
-    this.nearestToFarthestPoint = Math.ceil(this.nearestToFarthestPoint / 1000);
-    this.farthestToNearestPoint = Math.ceil(this.farthestToNearestPoint / 1000);
+    this.homeToNearestPoint = mTokm(this.homeToNearestPoint);
+    this.nearestToFarthestPoint = mTokm(this.nearestToFarthestPoint);
+    this.farthestToNearestPoint = mTokm(this.farthestToNearestPoint);
 
     let distance =
       this.homeToNearestPoint +
       this.nearestToFarthestPoint +
       this.farthestToNearestPoint;
 
-    let surface = distance / 2;
+    let semiperimeter = distance / 2;
     let data =
-      surface *
-      ((surface - this.homeToNearestPoint) *
-        (surface - this.nearestToFarthestPoint) *
-        (surface - this.farthestToNearestPoint));
+      semiperimeter *
+      ((semiperimeter - this.homeToNearestPoint) *
+        (semiperimeter - this.nearestToFarthestPoint) *
+        (semiperimeter - this.farthestToNearestPoint));
+    let standardWalkingSpeed = 5;
 
     this.setState({
       areaOfTriangleOfStaright: Math.sqrt(data).toFixed(2),
-      timeTakenToCross: distance / 5,
+      timeTakenToCross: distance / standardWalkingSpeed,
       viewFlag: true,
     });
   };

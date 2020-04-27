@@ -1,5 +1,6 @@
 import React from "react";
 import areaOfTriangle from "../component/areaOfTriangle.css";
+import mTokm from "../../src/services/mTokm";
 
 export default class areaOfTriangleWithCurvedEdge extends React.Component {
   constructor() {
@@ -80,9 +81,11 @@ export default class areaOfTriangleWithCurvedEdge extends React.Component {
   }
 
   addSummaryToPanel(summary) {
+    let standardWalkingSpeed = 5;
+    let distance = mTokm(summary.distance);
     this.setState({
-      distance: summary.distance / 1000,
-      timeTaken: (summary.travelTime / 3600).toFixed(2),
+      distance: distance,
+      timeTaken: distance / standardWalkingSpeed,
       viewFlag: true,
     });
   }
@@ -101,7 +104,7 @@ export default class areaOfTriangleWithCurvedEdge extends React.Component {
         </button>
         {this.state.viewFlag ? (
           <div>
-            <span>Area Of Triangle : {this.state.distance} Km</span>
+            <span>Distance Between the Points : {this.state.distance} Km</span>
             <br />
             <span>Time Taken To Walk : {this.state.timeTaken} Hr</span>
           </div>
